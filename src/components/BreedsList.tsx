@@ -34,7 +34,7 @@ const BreedsList = ({ breeds, hasMorePosts, onLoadMore }: Props) => {
                   marginBottom: `${baselineGrid * 3}px`,
                   paddingBottom: baselineGrid / 2
                 }}>
-                Underraser
+                Subbreeds
               </Text>
 
               {dog.subBreeds.map((subBreed) => {
@@ -49,11 +49,11 @@ const BreedsList = ({ breeds, hasMorePosts, onLoadMore }: Props) => {
         {hasMorePosts ? (
           <Block>
             <Button variant="outline" onClick={onLoadMore}>
-              Visa fler
+              Show more
             </Button>
           </Block>
         ) : (
-          <Text extend={{ fontStyle: 'italic', textAlign: 'center' }}>Inga fler att visa</Text>
+          <Text extend={{ fontStyle: 'italic', textAlign: 'center' }}>No more to show</Text>
         )}
       </View>
     </>

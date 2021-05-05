@@ -9,9 +9,9 @@ type Props = {
 
 const BreedListControl = ({ sortValue, onSortChange }: Props) => {
   return (
-    <SelectInput label="Sortera" value={sortValue} onChange={onSortChange}>
-      <option value="asc">Namn, stigande</option>
-      <option value="desc">Namn, fallande</option>
+    <SelectInput label="Sort" value={sortValue} onChange={onSortChange}>
+      <option value="asc">Name, ascending</option>
+      <option value="desc">Name, descending</option>
     </SelectInput>
   );
 };

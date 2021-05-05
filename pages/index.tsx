@@ -61,7 +61,7 @@ const Home = () => {
             position: 'relative',
             textAlign: 'center'
           }}>
-          <Text>Hundpatrullen rycker ut...</Text>
+          <Text>The dog patrol pulls out...</Text>
         </View>
       )}
 
@@ -76,10 +76,10 @@ const Home = () => {
             marginBottom={2}>
             <Flex extend={{ whiteSpace: 'nowrap' }}>
               <Text variant="bates" foreground="#888">
-                Hittade {breedsCount} raser
+                Found {breedsCount} breeds
               </Text>
               <Text variant="bates" foreground="#888">
-                och {subBreedsCount} underraser
+                and {subBreedsCount} subbreeds
               </Text>
             </Flex>
 

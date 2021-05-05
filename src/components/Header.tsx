@@ -29,7 +29,7 @@ const Header = () => {
           </Block>
           <View alignItems="center" marginLeft={2}>
             <Text variant="hillary" subStyle="emphasis">
-              Hundpatrullen
+              The dog patrol
             </Text>
 
             <View direction="row" alignItems="center">

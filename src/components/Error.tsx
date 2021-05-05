@@ -23,7 +23,7 @@ const Error = ({ errorMessage }: Props) => {
 
       <Spacer size={{ default: 4 }} />
 
-      <Text variant="hillary">Hundpatrullen kunde inte väckas</Text>
+      <Text variant="hillary">The dog patrol is stuck</Text>
 
       <Spacer />
 
