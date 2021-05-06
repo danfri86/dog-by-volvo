@@ -4,6 +4,7 @@ import { container } from '@styles/styleRules';
 import { pageSize } from '@utils/constants';
 import { sortListByKey } from '@utils/sorting';
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
@@ -52,6 +53,10 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Dog - by Volvo</title>
+      </Head>
+
       {isLoading && !error && (
         <View
           alignItems="center"
