@@ -5,12 +5,12 @@ import { Breed } from 'types/breed';
 import { Block, Text, useTheme, View } from 'vcc-ui';
 
 type Props = {
-  dog: Breed;
+  breed: Breed;
   hasNoSubBreed?: boolean;
   isSubBreed?: boolean;
 };
 
-const BreedsListItem = ({ dog, hasNoSubBreed, isSubBreed }: Props) => {
+const BreedsListItem = ({ breed, hasNoSubBreed, isSubBreed }: Props) => {
   const { baselineGrid } = useTheme();
 
   return (
@@ -24,7 +24,7 @@ const BreedsListItem = ({ dog, hasNoSubBreed, isSubBreed }: Props) => {
       }}>
       <View marginRight={3} minWidth="160px">
         <Text variant="hillary" subStyle="emphasis" as="h2">
-          {uppercaseFirtChar(dog.name)}
+          {uppercaseFirtChar(breed.name)}
         </Text>
       </View>
 
@@ -34,7 +34,7 @@ const BreedsListItem = ({ dog, hasNoSubBreed, isSubBreed }: Props) => {
         order={[1, 1, 0]}
         marginTop={[1, 1, 0]}
         maxWidth={['auto', 'auto', '500px']}>
-        <Text>{dog.description}</Text>
+        <Text>{breed.description}</Text>
       </View>
 
       {(hasNoSubBreed || isSubBreed) && (
@@ -47,7 +47,7 @@ const BreedsListItem = ({ dog, hasNoSubBreed, isSubBreed }: Props) => {
             marginLeft: 'auto',
             background: '#ddd'
           }}>
-          <Image src={dog.imageUrl} layout="fill" objectFit="cover" />
+          <Image src={breed.imageUrl} layout="fill" objectFit="cover" />
         </Block>
       )}
     </View>

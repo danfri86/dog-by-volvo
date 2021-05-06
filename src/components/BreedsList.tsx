@@ -24,7 +24,7 @@ const BreedsList = ({ breeds, hasMorePosts, onLoadMore }: Props) => {
           paddingLeft={2}
           paddingRight={2}
           backgroundColor={color.background.secondary}>
-          <BreedsListItem dog={dog} hasNoSubBreed={dog.subBreeds && dog.subBreeds.length < 1} />
+          <BreedsListItem breed={dog} hasNoSubBreed={dog.subBreeds && dog.subBreeds.length < 1} />
 
           {dog.subBreeds && dog.subBreeds.length > 0 && (
             <>
@@ -38,7 +38,7 @@ const BreedsList = ({ breeds, hasMorePosts, onLoadMore }: Props) => {
               </Text>
 
               {dog.subBreeds.map((subBreed) => {
-                return <BreedsListItem key={subBreed.name} dog={subBreed} isSubBreed={true} />;
+                return <BreedsListItem key={subBreed.name} breed={subBreed} isSubBreed={true} />;
               })}
             </>
           )}
